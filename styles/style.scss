@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+@import "../components/Calculator/calculator";
+@import "../components/KeysGrid/keys-grid";
+@import "../components/KeysGrid/Key/key";
+@import "../components/Toggle/toggle";
+@import "../components/Toggle/Box/box";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: Spartan;
+  user-select: none;
+}
+
+.app__container {
+  min-height: 100vh;
+  overflow: hidden;
+  font-size: 23px;
+  font-family: "Spartan", sans-serif;
+  background-color: var(--bg-main);
+  .wrapper {
+    min-width: 250px;
+    max-width: 2000px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+}
+
+.attribution p {
+  font-size: 16px;
+  color: var(--text);
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  a {
+    color: var(--delete);
+    text-decoration: none;
+  }
+}
+
+.dark__theme {
+  --bg-main: hsl(222, 26%, 31%);
+  --toggle: hsl(223, 31%, 20%);
+  --screen: hsl(224, 36%, 15%);
+  --delete: hsl(225, 21%, 49%);
+  --delete-shadow: hsl(224, 28%, 35%);
+  --result: hsl(6, 63%, 50%);
+  --result-shadow: hsl(6, 70%, 34%);
+  --key: hsl(30, 25%, 89%);
+  --key-shadow: hsl(28, 16%, 65%);
+  --key-text: hsl(221, 14%, 31%);
+  --text: #ffffff;
+}
+
+.light__theme {
+  --bg-main: hsl(0, 0%, 90%);
+  --toggle: hsl(0, 5%, 81%);
+  --screen: hsl(0, 0%, 93%);
+  --delete: hsl(185, 42%, 37%);
+  --delete-shadow: hsl(185, 58%, 25%);
+  --result: hsl(25, 98%, 40%);
+  --result-shadow: hsl(25, 99%, 27%);
+  --key: hsl(45, 7%, 89%);
+  --key-shadow: hsl(35, 11%, 61%);
+  --key-text: hsl(60, 10%, 19%);
+  --text: hsl(60, 10%, 19%);
+}
+
+.funky {
+  --bg-main: hsl(268, 75%, 9%);
+  --toggle: hsl(268, 71%, 12%);
+  --screen: hsl(268, 71%, 12%);
+  --delete: hsl(281, 89%, 26%);
+  --delete-shadow: hsl(285, 91%, 52%);
+  --result: hsl(176, 100%, 44%);
+  --result-shadow: hsl(177, 92%, 70%);
+  --key: hsl(268, 47%, 21%);
+  --key-shadow: hsl(290, 70%, 36%);
+  --key-text: hsl(52, 100%, 62%);
+  --text: hsl(52, 100%, 62%);
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    cursor: default !important;
+  }
+}
