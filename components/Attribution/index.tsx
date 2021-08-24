@@ -2,7 +2,11 @@ const Attribution = () => (
   <div className="attribution">
     <p>
       Created with 🔥 by{" "}
-      <a target="_blank" href="https://github.com/ratul-devr">
+      <a
+        href="https://github.com/ratul-devr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         DevR
       </a>
     </p>
